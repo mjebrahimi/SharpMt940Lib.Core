@@ -1,0 +1,56 @@
+- 
+  branches: 
+    only: 
+      - development
+
+  build_script: 
+    - build.cmd "package buildnumber=%APPVEYOR_BUILD_NUMBER% suffix=-test configuration=debug"
+  
+  version: 1.2.0.{build} 
+
+  test: 
+    assemblies: .artifacts\release\*.Tests.dll  
+
+  nuget:
+    account_feed: true
+    project_feed: true
+    disable_publish_on_pr: true
+
+  cache:
+    - packages -> **\packages.config
+
+  after_build:
+    - appveyor PushArtifact .artifacts\packages\Raptorious.Finance.Swift.Mt940.%APPVEYOR_BUILD_VERSION%-test.nupkg
+    - appveyor PushArtifact .artifacts\packages\Raptorious.Finance.Swift.Mt940.%APPVEYOR_BUILD_VERSION%-test.symbols.nupkg
+
+- 
+  branches:
+    only: 
+      - default
+  
+  build_script: 
+    - build.cmd "package buildnumber=%APPVEYOR_BUILD_NUMBER% configuration=release"
+  
+  version: 1.2.0.{build} 
+
+  test: 
+    assemblies: .artifacts\release\*.Tests.dll  
+
+  nuget:
+    account_feed: true
+    project_feed: true
+    disable_publish_on_pr: true
+
+  cache:
+    - packages -> **\packages.config
+
+  deploy:
+  - provider: NuGet
+    api_key:
+      secure: D/PoxmXg9Ot/Wi6IUszecz04JMMm5qXAIPvJbWlM4fQieTR4nkF4Mb0NAwZWxYey
+    skip_symbols: false
+
+
+  after_build:
+    - appveyor PushArtifact .artifacts\packages\Raptorious.Finance.Swift.Mt940.%APPVEYOR_BUILD_VERSION%.nupkg
+    - appveyor PushArtifact .artifacts\packages\Raptorious.Finance.Swift.Mt940.%APPVEYOR_BUILD_VERSION%.symbols.nupkg

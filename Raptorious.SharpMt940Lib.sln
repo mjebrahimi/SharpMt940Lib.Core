@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raptorious.SharpMt940Lib", "Raptorious.SharpMt940Lib\Raptorious.SharpMt940Lib.csproj", "{B25830D6-3113-4D71-9E6A-06B3D67EFA34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raptorious.SharpMt940Lib.Tests", "Raptorious.SharpMt940Lib.Tests\Raptorious.SharpMt940Lib.Tests.csproj", "{29D6E965-0174-4144-ADDB-74664979BAAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B25830D6-3113-4D71-9E6A-06B3D67EFA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25830D6-3113-4D71-9E6A-06B3D67EFA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25830D6-3113-4D71-9E6A-06B3D67EFA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25830D6-3113-4D71-9E6A-06B3D67EFA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29D6E965-0174-4144-ADDB-74664979BAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D6E965-0174-4144-ADDB-74664979BAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D6E965-0174-4144-ADDB-74664979BAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D6E965-0174-4144-ADDB-74664979BAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86C88A99-4EDE-4C74-99E7-30CF80BE34D1}
+	EndGlobalSection
+EndGlobal

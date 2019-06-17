@@ -1,0 +1,18 @@
+﻿@"{1:F01SNSBNL2AXXXX0000000000}{2:O94000000000000000000000000000000000000000N}{3:}{4:
+:20:0000000000
+:25:0918829518
+:28C:178/1
+:60F:C140627EUR12062,29
+:61:1501260125CR35,89NTRFSupplementaryDetails1
+Visa
+:86:Transaction Description 0 Line 1
+Transaction Description 0 Line 2
+GBP 28.00   0.780162 on 23/01/2015
+:61:1501260125DR20,00NCHGSupplementaryDetails2
+Visa Annual Charge (Notice no 86 code!)
+:61:1501260126CR18790,00NTRFSupplementaryDetails3
+Inward Payment
+:86:Transaction Description 3 Line 1
+:62F:C140627EUR12062,29
+
+-}{5:}
