@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 # SharpMT940Lib.Core #
-SharpMt940Lib.Core is an unofficial port of the [Raptorious.Finance.Swift.Mt940](https://www.nuget.org/packages/Raptorious.Finance.Swift.Mt940/) library to .NET Core.
+[SharpMt940Lib.Core](https://www.nuget.org/packages/SharpMt940Lib.Core/) is an unofficial port of the [Raptorious.Finance.Swift.Mt940](https://www.nuget.org/packages/Raptorious.Finance.Swift.Mt940/) library to .NET Core.
 
 ## What is it? ##
 
