@@ -2,6 +2,42 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>Raptorious.SharpMt940Lib.Core</AssemblyName>
+    <PackageId>Raptorious.SharpMt940Lib.Core</PackageId>
+    <Title>Raptorious.SharpMt940Lib.Core</Title>
+    <Product>Raptorious.SharpMt940Lib.Core</Product>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Authors>Mohammad Javad Ebrahimi</Authors>
+    <Company>Mohammad Javad Ebrahimi</Company>
+    <Copyright>Copyright © Mohammad Javad Ebrahimi 2019</Copyright>
+    <Description>SharpMT940Lib implements the MT940 format in C# and is based on specifications of multiple banks. You can use it as a base for financial software or for conversions to other formats like CSV or OFX.</Description>
+    <PackageTags>.NETCore MT940 SharpMT940Lib Bank Swift Finance Transaction Parser</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/mjebrahimi/Raptorious.SharpMt940Lib.Core/master/Documentation/MT940.jpg</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/mjebrahimi/Raptorious.SharpMt940Lib.Core/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/mjebrahimi/Raptorious.SharpMt940Lib.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mjebrahimi/Raptorious.SharpMt940Lib.Core</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/mjebrahimi/Raptorious.SharpMt940Lib.Core/releases</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <!--<GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>-->
+    <!--<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>-->
+    <!--<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>-->
+    <!--<AssemblyOriginatorKeyFile>..\..\AutoMapper.snk</AssemblyOriginatorKeyFile>-->
+    <!--<SignAssembly>true</SignAssembly>-->
+    <!--<PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>-->
   </PropertyGroup>
+  
+  <ItemGroup>
+    <!--<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-62925-02" PrivateAssets="All" />-->
+    <!--<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>-->
+  </ItemGroup>
 
 </Project>
