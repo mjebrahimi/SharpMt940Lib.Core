@@ -1,5 +1,6 @@
 [![NuGet](https://img.shields.io/nuget/v/NopLocalization.svg)](https://www.nuget.org/packages/SharpMt940Lib.Core/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://github.com/mjebrahimi/SharpMt940Lib.Core/workflows/.NET%20Core/badge.svg)](https://github.com/mjebrahimi/SharpMt940Lib.Core)
 
 # SharpMT940Lib.Core #
 [SharpMt940Lib.Core](https://www.nuget.org/packages/SharpMt940Lib.Core/) is an unofficial port of the [Raptorious.Finance.Swift.Mt940](https://www.nuget.org/packages/Raptorious.Finance.Swift.Mt940/) library to .NET Core.

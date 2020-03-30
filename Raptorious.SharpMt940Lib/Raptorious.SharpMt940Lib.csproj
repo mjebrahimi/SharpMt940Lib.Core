@@ -1,43 +1,37 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net40;net45;net461;</TargetFrameworks>
     <LangVersion>7.3</LangVersion>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>SharpMt940Lib.Core</AssemblyName>
     <PackageId>SharpMt940Lib.Core</PackageId>
     <Title>SharpMt940Lib.Core</Title>
     <Product>SharpMt940Lib.Core</Product>
-    <Version>1.0.0</Version>
-    <PackageVersion>1.0.0</PackageVersion>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Version>1.0.1</Version>
+    <PackageVersion>1.0.1</PackageVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
     <Authors>Mohammad Javad Ebrahimi</Authors>
     <Company>Mohammad Javad Ebrahimi</Company>
     <Copyright>Copyright © Mohammad Javad Ebrahimi 2019</Copyright>
     <Description>SharpMt940Lib.Core is an unofficial port of the 'Raptorious.Finance.Swift.Mt940' to .NET Core. SharpMT940Lib implements the MT940 format in C# and is based on specifications of multiple banks. You can use it as a base for financial software or for conversions to other formats like CSV or OFX.</Description>
     <PackageTags>.NETCore MT940 SharpMT940Lib Bank Swift Finance Transaction Parser</PackageTags>
-    <PackageIconUrl>https://raw.githubusercontent.com/mjebrahimi/SharpMt940Lib.Core/master/Documentation/MT940.jpg</PackageIconUrl>
-    <PackageLicenseUrl>https://github.com/mjebrahimi/SharpMt940Lib.Core/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/mjebrahimi/SharpMt940Lib.Core</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/mjebrahimi/SharpMt940Lib.Core</RepositoryUrl>
-    <PackageReleaseNotes>https://github.com/mjebrahimi/SharpMt940Lib.Core/releases</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <!--<GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>-->
-    <!--<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>-->
-    <!--<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>-->
-    <!--<AssemblyOriginatorKeyFile>..\..\AutoMapper.snk</AssemblyOriginatorKeyFile>-->
-    <!--<SignAssembly>true</SignAssembly>-->
-    <!--<PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>-->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageIcon>MT940.jpg</PackageIcon>
   </PropertyGroup>
   
   <ItemGroup>
-    <!--<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-62925-02" PrivateAssets="All" />-->
-    <!--<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>-->
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
-
+  
+  <ItemGroup>
+    <None Include="MT940.jpg" Pack="true" PackagePath=""/>
+  </ItemGroup>
+  
 </Project>
