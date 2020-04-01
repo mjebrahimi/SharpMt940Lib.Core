@@ -1,4 +1,4 @@
-[![NuGet](https://img.shields.io/nuget/v/NopLocalization.svg)](https://www.nuget.org/packages/SharpMt940Lib.Core/)
+[![NuGet](https://img.shields.io/nuget/v/SharpMt940Lib.Core.svg)](https://www.nuget.org/packages/SharpMt940Lib.Core/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/mjebrahimi/SharpMt940Lib.Core/workflows/.NET%20Core/badge.svg)](https://github.com/mjebrahimi/SharpMt940Lib.Core)
 
