@@ -119,16 +119,15 @@ namespace Raptorious.SharpMt940Lib
             {
                 throw new ArgumentNullException(nameof(cultureInfo));
             }
-            
+
 
             // TODO: Finish/Fix regex
             // @See: https://bitbucket.org/raptux/sharpmt940lib/issue/1/regex-problem-in-transactioncs
-            
+
             // not done.
             //Regex regex = new Regex(@"^(?<valuedate>(?<year>\d{2})(?<month>\d{2})(?<day>\d{2}))(?<entrydate>(?<entrymonth>\d{2})(?<entryday>\d{2}))?(?<creditdebit>C|D|RC|RD)(?<fundscode>[A-z]{0,1}?)(?<ammount>\d*,\d{0,2})(?<transactiontype>[\w\s]{4})(?<reference>[\s\w]{0,16})");
 
-            var regex = new Regex(@"^(?<valuedate>(?<year>\d{2})(?<month>\d{2})(?<day>\d{2}))(?<entrydate>(?<entrymonth>\d{2})(?<entryday>\d{2}))?(?<creditdebit>C|D|RC|RD)(?<fundscode>[A-z]{0,1}?)(?<ammount>\d*[,.]\d{0,2})(?<transactiontype>[\w\s]{4})(?<reference>[\s\w]{0,16})(?:(?<servicingreference>//[\s\w]{0,16}))*(?<supplementary>\r\n[\s\w]{0,34})*");
-
+            var regex = new Regex(@"^(?<valuedate>(?<year>\d{2})(?<month>\d{2})(?<day>\d{2}))(?<entrydate>(?<entrymonth>\d{2})(?<entryday>\d{2}))?(?<creditdebit>C|D|RC|RD)(?<fundscode>[A-z]{0,1}?)(?<ammount>\d*[,.]\d{0,2})(?<transactiontype>[\w\s]{4})(?<reference>([\s\S].+?(?=\/\/)){0,16})(?:(?<servicingreference>//[ \t\f\v\w]{0,16}))*(?<supplementary>\r\n[\s\w]{0,34})*");
 
             var match = regex.Match(data);
 

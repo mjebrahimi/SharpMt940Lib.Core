@@ -266,8 +266,8 @@ namespace Raptorious.SharpMt940Lib
                                 customerStatementMessage = customerStatementMessage.SetOpeningBalance(new TransactionBalance(transactionData, cultureInfo));
                                 break;
                             case ":61:":
-                                addAndNullTransactionIfPresent();
                                 transaction = new Transaction(transactionData, customerStatementMessage.OpeningBalance.Currency, cultureInfo);
+                                addAndNullTransactionIfPresent();
                                 break;
                             case ":86:":
                                 /* 
