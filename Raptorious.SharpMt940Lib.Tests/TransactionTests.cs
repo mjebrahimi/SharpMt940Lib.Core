@@ -92,5 +92,13 @@ namespace Raptorious.SharpMt940Lib.Tests
 
             ExpectedSwiftTransaction.AssertTransaction(expectedTransaction, transaction);
         }
+
+        [Test]
+        public void AmountWithoutDecimalPlaces_IsParsedCorrectly()
+        {
+            var transaction = new Transaction("2012031203CR20NMSCVS0015060871", new Currency("EUR"));
+
+            Assert.AreEqual(20, transaction.Amount.Value);
+        }
     }
 }
