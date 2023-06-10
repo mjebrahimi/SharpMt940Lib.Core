@@ -375,7 +375,7 @@ namespace Raptorious.SharpMt940Lib
 
         /// <summary>
         /// This method accepts mt940 data file given as a string. The string 
-        /// is split by Environment.NewLine as each line contains a command.
+        /// is split into lines as each line contains a command.
         /// 
         /// Every line that starts with a ':' is a mt940 'command'. Lines that 
         /// does not start with a ':' belongs to the previous command. 
@@ -390,7 +390,7 @@ namespace Raptorious.SharpMt940Lib
         {
             // Split on the new line seperator. In a MT940 messsage, every command is on a seperate line.
             // Assumption is made it is in the same format as the enviroments new line.
-            var tokenized = data.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            var tokenized = data.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
 
             // Create  an empty list of string arrays.
             var transactions = new List<string[]>();
